@@ -68,7 +68,7 @@ function computeDeployAccountTxHashCompat({
 
 async function main() {
   // Basic config: reuse online working parameters (overridable via env)
-  const RPC_URL = process.env.RPC_URL || 'http://10.91.22.9:9545/rpc/v0_8';
+  const RPC_URL = process.env.RPC_URL || 'rpc';
   const CHAIN_ID = process.env.CHAIN_ID || constants.StarknetChainId.SN_MAIN;
   const CLASS_HASH =
       process.env.CLASS_HASH || '0x1a736d6ed154502257f02b1ccdf4d9d1089f80811cd6acad48e6b6a9d1f2003';
