@@ -71,9 +71,9 @@ async function main() {
   const RPC_URL = process.env.RPC_URL || 'rpc';
   const CHAIN_ID = process.env.CHAIN_ID || constants.StarknetChainId.SN_MAIN;
   const CLASS_HASH =
-      process.env.CLASS_HASH || '0x1a736d6ed154502257f02b1ccdf4d9d1089f80811cd6acad48e6b6a9d1f2003';
+      process.env.CLASS_HASH || '';
   const PRIVATE_KEY =
-      process.env.PRIVATE_KEY || '0x3e1312419804739a5c34860267f828adc0b4cca398e28dda9184dcd04dcec8e';
+      process.env.PRIVATE_KEY || '';
 
   // Intercept and log all requests/responses to RPC_URL
   let lastRpcRequest = null;

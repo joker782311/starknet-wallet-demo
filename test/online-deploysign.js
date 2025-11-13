@@ -15,7 +15,7 @@ async function main() {
   // 配置：可通过环境变量覆盖
   const RPC_URL = process.env.RPC_URL || 'rpc';
   const CLASS_HASH =
-    process.env.CLASS_HASH || '0x1a736d6ed154502257f02b1ccdf4d9d1089f80811cd6acad48e6b6a9d1f2003';
+    process.env.CLASS_HASH || '';
 
   // 拦截并记录所有发往 RPC_URL 的请求和响应
   let lastRpcRequest = null;
